@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hospital Management System</title>
+  </head>
+  <body>
+    <!-- SIDEBAR + NAV -->
+    <section class="sidebar">
+      <div class="logo">
+        <h1>Hospital App</h1>
+      </div>
+
+      <nav>
+        <ul class="nav-items">
+          <li class="nav-item active">
+            <div>
+              <i class="fas fa-gauge"></i>
+            </div>
+            <div>
+              <span>Dashboard</span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <i class="fas fa-user-doctor"></i>
+            </div>
+            <div>
+              <span>Doctors</span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <i class="fas fa-file-medical"></i>
+            </div>
+            <div>
+              <span>Patients</span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <span>Messages</span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <i class="fas fa-briefcase-medical"></i>
+            </div>
+            <div>
+              <span>Medications</span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <i class="fas fa-file-lines"></i>
+            </div>
+            <div>
+              <span>Documents</span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <i class="fas fa-wrench"></i>
+            </div>
+            <div>
+              <span>Settings</span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <i class="fas fa-door-open"></i>
+            </div>
+            <div>
+              <span>Logout</span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <header class="main-header">Header</header>
+
+      <div class="container">
+        <!-- TOP CARDS -->
+        <div class="card-container">
+          <!-- CARD 1 -->
+          <div class="card">
+            <div class="card-left">
+              <h4 class="stat-heading">45</h4>
+              <span class="stat-text">New Patients</span>
+            </div>
+            <div class="card-right">
+              <div class="icon-container">
+                <i class="fa-solid fa-notes-medical"></i>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="card">
+            <div class="card-left">
+              <h4 class="stat-heading">23</h4>
+              <span class="stat-text">Our Doctors</span>
+            </div>
+            <div class="card-right">
+              <div class="icon-container">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="card">
+            <div class="card-left">
+              <h4 class="stat-heading">14</h4>
+              <span class="stat-text">Operations</span>
+            </div>
+            <div class="card-right">
+              <div class="icon-container">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="card">
+            <div class="card-left">
+              <h4 class="stat-heading">£5728</h4>
+              <span class="stat-text">Income</span>
+            </div>
+            <div class="card-right">
+              <div class="icon-container">
+                <i class="fa-solid fa-sterling-sign"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MIDDLE -->
+        <div class="main-middle">
+          <!-- PATIENT STATUS -->
+          <div class="patient-status">
+            <div class="top">
+              <h4 class="section-title-primary">Patient Status</h4>
+              <select>
+                <option value="thisYear">This Year</option>
+              </select>
+            </div>
+            <div class="middle">
+              <img src="assets/chart.png" alt="chart" />
+            </div>
+          </div>
+
+          <!-- BEST DOCTOR -->
+          <div class="best-doctor">
+            <div class="top">
+              <h1 class="section-title-secondary">Best Doctor</h1>
+              <select>
+                <option value="thisYear">This Year</option>
+              </select>
+            </div>
+            <div class="middle">
+              <div class="img-container">
+                <img src="assets/best-doctor.jpg" alt="" />
+              </div>
+              <h4>Dr. Jonathan Wallace</h4>
+              <span>Endocrinologists | George Eliot Hospital</span>
+              <div class="stats-container">
+                <div class="stat">
+                  <h5 class="stat-title">Experiences</h5>
+                  <div class="stat-container">
+                    <h4>8 Years</h4>
+                  </div>
+                </div>
+                <div class="stat">
+                  <h5 class="stat-title">Patients</h5>
+                  <div class="stat-container">
+                    <h4>2,598</h4>
+                  </div>
+                </div>
+                <div class="stat">
+                  <h5 class="stat-title">Reviews</h5>
+                  <div class="stat-container">
+                    <h4>1537</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN / BOTTOM -->
+        <div class="main-bottom">
+          <!-- APPOINTMENT REQUEST -->
+          <div class="appointment-request">
+            <div class="top">
+              <h4 class="section-title-primary">Appointment Request</h4>
+
+              <a href="#">See All</a>
+            </div>
+            <div class="bottom">
+              <table class="appointment-table">
+                <tr>
+                  <td class="request-info">
+                    <img src="assets/patient-1.jpg" alt="" />
+                    <div class="request-details">
+                      <h4>Glen Stanley</h4>
+                      <span>Diabetes</span>
+                    </div>
+                  </td>
+                  <td class="table-value">123-456-789</td>
+                  <td class="table-value">04/03/2026 - 10am</td>
+                  <td class="table-value">Accepted</td>
+                </tr>
+                <tr>
+                  <td class="request-info">
+                    <img src="assets/patient-1.jpg" alt="" />
+                    <div class="request-details">
+                      <h4>Glen Stanley</h4>
+                      <span>Diabetes</span>
+                    </div>
+                  </td>
+                  <td class="table-value">123-456-789</td>
+                  <td class="table-value">04/03/2026 - 10am</td>
+                  <td class="table-value">Accepted</td>
+                </tr>
+                <tr>
+                  <td class="request-info">
+                    <img src="assets/patient-1.jpg" alt="" />
+                    <div class="request-details">
+                      <h4>Glen Stanley</h4>
+                      <span>Diabetes</span>
+                    </div>
+                  </td>
+                  <td class="table-value">123-456-789</td>
+                  <td class="table-value">04/03/2026 - 10am</td>
+                  <td class="table-value">Accepted</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- RECENT PATIENTS -->
+          <div class="recent-patients">
+            <div class="top">
+              <h4 class="section-title-primary">Recent Patients</h4>
+            </div>
+            <div class="bottom">
+              <table class="patient-table">
+                <tr>
+                  <th class="table-heading">Name</th>
+                  <th class="table-heading">Gender</th>
+                  <th class="table-heading">Weight</th>
+                  <th class="table-heading">Disease</th>
+                  <th class="table-heading">Date</th>
+                  <th class="table-heading">Status</th>
+                </tr>
+                <tr>
+                  <td class="patient-info">
+                    <img src="assets/patient-1.jpg" alt="" />
+                    <span>Glen Stanley</span>
+                  </td>
+                  <td class="table-value">Male</td>
+                  <td class="table-value">75kg</td>
+                  <td class="table-value">Cancer</td>
+                  <td class="table-value">29 Jan</td>
+                  <td class="table-value">Outpatient</td>
+                </tr>
+                <tr>
+                  <td class="patient-info">
+                    <img src="assets/patient-1.jpg" alt="" />
+                    <span>Glen Stanley</span>
+                  </td>
+                  <td class="table-value">Male</td>
+                  <td class="table-value">75kg</td>
+                  <td class="table-value">Cancer</td>
+                  <td class="table-value">29 Jan</td>
+                  <td class="table-value">Outpatient</td>
+                </tr>
+                <tr>
+                  <td class="patient-info">
+                    <img src="assets/patient-1.jpg" alt="" />
+                    <span>Glen Stanley</span>
+                  </td>
+                  <td class="table-value">Male</td>
+                  <td class="table-value">75kg</td>
+                  <td class="table-value">Cancer</td>
+                  <td class="table-value">29 Jan</td>
+                  <td class="table-value">Outpatient</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
